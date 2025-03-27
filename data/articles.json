@@ -1,0 +1,337 @@
+{
+    "main_menu": {
+        "message": "Выберите раздел:",
+        "buttons": [
+            [{"text": "Статьи", "callback": "section1", "type": "menu"}, {"text": "Таро", "callback": "section2", "type": "menu"}]
+        ]
+    },
+    "section1": {
+        "message": "Работы авторов",
+        "buttons": [
+            [{"text": "Александр Армантский", "callback": "armant_menu", "type": "menu"}, {"text": "Алиса Фролова", "callback": "alice_menu", "type": "menu"}],
+            [{"text": "Назад", "callback": "main_menu", "type": "menu"}]
+        ]
+    },
+    "section2": {
+        "message": "Раздел в разработке",
+        "buttons": [
+            [{"text": "Назад", "callback": "main_menu", "type": "menu"}]
+        ]
+    },
+    "alice_menu": {
+        "message": "Лучшее собранее статей Алисы Фроловой",
+        "buttons": [
+            [{"text": "😈️Мифы и стереотипы о бесах😈️", "callback": "myths_menu", "type": "menu"}],
+            [{"text": "📍️Вольты📍️", "callback": "volty", "type": "menu"}, {"text": "📑️Договоры📑️", "callback": "contracts", "type": "menu"}, {"text": "⚜️Финансы⚜️", "callback": "finances", "type": "menu"}],
+            [{"text": "👩‍❤️‍👨️Любятина👩‍❤️‍👨️", "callback": "love", "type": "menu"}, {"text": "🎯️Вызовы🎯️", "callback": "calls", "type": "menu"}, {"text": "🛸️Оморочки🛸️", "callback": "tricks", "type": "menu"}],
+            [{"text": "🔰️Защиты🔰️", "callback": "defense", "type": "menu"}, {"text": "🎇️Чистки🎇️", "callback": "cleansing", "type": "menu"}],
+            [{"text": "🌊️Отвороты🌊️", "callback": "breakup", "type": "menu"}, {"text": "☠️Порчи☠️", "callback": "curses", "type": "menu"}, {"text": "🏔️Закрытия🏔️", "callback": "closures", "type": "menu"}],
+            [{"text": "🗝️Матчасть🗝️", "callback": "books", "type": "menu"}],
+            [{"text": "🎢️Остальное🎢️", "callback": "other", "type": "menu"}],
+            [{"text": "Назад", "callback": "section1", "type": "menu"}]
+        ]
+    },
+    "myths_menu": {
+        "message": "Ознакомьтесь пожалуйста, {name}",
+        "buttons": [
+            [{"text": "😈️Мифы и стереотипы о бесах😈️", "callback": "myths_menu1", "type": "menu"}],
+            [{"text": "О даре", "callback": "gift", "type": "article"}, {"text": "Всё о ритуалах", "callback": "rituals", "type": "article"}],
+            [{"text": "О крещении и раскрещивании", "callback": "baptism", "type": "article"}],
+            [{"text": "Продажа души", "callback": "soul_sale", "type": "article"}, {"text": "Чёрное венчание", "callback": "black_wedding", "type": "article"}],
+            [{"text": "Посвящение", "callback": "initiation", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "myths_menu1": {
+        "message": "🔥🔥🔥\n\n{name}, выбирай нужную часть:\n\n👇👇👇",
+        "buttons": [
+            [{"text": "😈️Часть 1", "callback": "msob1", "type": "article"}],
+            [{"text": "Часть 2😈️", "callback": "msob2", "type": "article"}],
+            [{"text": "😈️Часть 3", "callback": "msob3", "type": "article"}],
+            [{"text": "Часть 4😈️", "callback": "msob4", "type": "article"}],
+            [{"text": "Назад", "callback": "myths_menu", "type": "menu"}]
+        ]
+    },
+    "volty": {
+        "message": "Приятного чтения",
+        "buttons": [
+            [{"text": "Cоздать вольт", "callback": "sozd_v", "type": "article"}, {"text": "Наречь вольт", "callback": "nar_v", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "contracts": {
+        "message": "{name}, хотите договор?",
+        "buttons": [
+            [{"text": "На замужество", "callback": "marriage_contract", "type": "article"}],
+            [{"text": "Скелет договора", "callback": "contract_skeleton", "type": "article"}, {"text": "Правила", "callback": "rules", "type": "article"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "finances": {
+        "message": "⚜️Денежки, денежки⚜️",
+        "buttons": [
+            [{"text": "⚜️Продать(с помощью бесов)⚜️", "callback": "sell_help", "type": "article"}, {"text": "⚜️Продать(на личной силе)⚜️", "callback": "sell_personal", "type": "article"}],
+            [{"text": "Привлечь клиентов \"⚜️Монетный двор⚜️\"", "callback": "attract_clients", "type": "article"}],
+            [{"text": "⚜️Найти работу⚜️", "callback": "find_job", "type": "article"}, {"text": "⚜️Вернуть долг⚜️", "callback": "return_debt", "type": "article"}],
+            [{"text": "⚜️Общий список работ Алисы Фроловой⚜️", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "love": {
+        "message": "Ах, любятинка. {name}, выбери часть статей!",
+        "buttons": [
+            [{"text": "Часть 1", "callback": "love_menu_p1", "type": "menu"}, {"text": "Часть 2", "callback": "love_menu_p2", "type": "menu"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "love_menu_p1": {
+        "message": "Вот первая часть!",
+        "buttons": [
+            [{"text": "🔥💗Приворот кладбищенский через фото", "callback": "priv_klad_p1", "type": "article"}],
+            [{"text": "Безопасный сексуальный заговор привязки \"БСЗП\" 🐅", "callback": "bszp_p1", "type": "article"}],
+            [{"text": "🌱\"Древязка\"🌱", "callback": "der_p1", "type": "article"}, {"text": "Приворот ❤😏🤤", "callback": "priv_p1", "type": "article"}],
+            [{"text": "Приворот ХЭ", "callback": "privxe_p1", "type": "article"}],
+            [{"text": "К частям", "callback": "love", "type": "menu"}]
+        ]
+    },
+    "love_menu_p2": {
+        "message": "А вот и вторая часть! Специально для вас, {name}!",
+        "buttons": [
+            [{"text": "🤠👞Сведение дорог(на личной силе) 👠👧", "callback": "svedlich_p2", "type": "article"}],
+            [{"text": "Внушение (самое обычное, легенькое и на личной силе) 💪", "callback": "vnushlich_p2", "type": "article"}],
+            [{"text": "Исполнение желания👸🏻️", "callback": "ispzel_p2", "type": "article"}],
+            [{"text": "Гармонизация 🎎💗", "callback": "germ_p2", "type": "article"}],
+            [{"text": "Найти своего человека 🙌👯👫👨", "callback": "nsch_p2", "type": "article"}],
+            [{"text": "К частям", "callback": "love", "type": "menu"}]
+        ]
+    },
+    "calls": {
+        "message": "Он не сможет устоять!",
+        "buttons": [
+            [{"text": "🔥️Вызов \"Огонек\"🔥️", "callback": "af_v_ogonek", "type": "article"}],
+            [{"text": "👻От мертвых нет покоя👻", "callback": "af_v_otmertv", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "tricks": {
+        "message": "Морочим, морочим, всех заморочим!",
+        "buttons": [
+            [{"text": "🍭️На себя \"Конфетка\"🍭️", "callback": "af_tricks_candy", "type": "article"}, {"text": "На других \"Фантик\"", "callback": "af_tricks_fant", "type": "article"}],
+            [{"text": "Повысить харизму и обаяние через беса 😇💃", "callback": "af_tricks_bes", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "defense": {
+        "message": "Защиты на любой вкус!",
+        "buttons": [
+            [{"text": "💍 Защита на обручальные кольца ❤️", "callback": "af_z_obruch", "type": "article"}],
+            [{"text": "🛡️ Защита личная \"Зеркальщик\" 🤝", "callback": "af_z_zerkal", "type": "article"}],
+            [{"text": "😊 Защита \"Хорошая\" на долгий срок", "callback": "af_z_horosh", "type": "article"}],
+            [{"text": "📋 Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "cleansing": {
+        "message": "Защиты на любой вкус для вас, {name}!",
+        "buttons": [
+            [{"text": "👽Чистка домашняя, бюджетная, невеселая👽", "callback": "af_def_dom", "type": "article"}],
+            [{"text": "Чистка \"Ножевое ранение\"🔥🔪", "callback": "af_def_knife", "type": "article"}],
+            [{"text": "🚿🚿🚿Чистка дома 🚿🚿🚿", "callback": "af_def_house", "type": "article"}],
+            [{"text": "Заставить забыть обиды \"Прощение\" 🙏👍", "callback": "af_def_prosch", "type": "article"}],
+            [{"text": "Чистка «Веселая» 🙃😏😌", "callback": "af_def_nice", "type": "article"}],
+            [{"text": "Восковые отливки и как их делать 🐝💧", "callback": "af_def_vosk", "type": "article"}],
+            [{"text": "💧Диализ💧", "callback": "af_def_dializ", "type": "article"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "breakup": {
+        "message": "Отворотим надолго, а может навсегда...",
+        "buttons": [
+            [{"text": "Отворот рассорочный \"Отражения\"", "callback": "af_breakup_otraz", "type": "article"}],
+            [{"text": "Остуда \"Холодное сердце\" 💙❄", "callback": "af_breakup_coldheart", "type": "article"}],
+            [{"text": "Рассорка \"С бесом в Гагры\" 🤜🏻🤛🏻", "callback": "af_breakup_sbesom", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "curses": {
+        "message": "Для ознакомительного чтения",
+        "buttons": [
+            [{"text": "\"Покойникам никто не пишет\"", "callback": "af_curses_pokoinikam", "type": "article"}],
+            [{"text": "☠️У(с)покоить☠️", "callback": "af_curses_uspokoit", "type": "article"}, {"text": "Круговорот♻👣", "callback": "af_curses_krugovorot", "type": "article"}],
+            [{"text": "Кладбищенское закрытие \"Сиди дома\" 😬", "callback": "af_curses_kladbishenskoe", "type": "article"}],
+            [{"text": "Вызвать аллергию🤢😠", "callback": "af_curses_vyzvat", "type": "article"}, {"text": "\"ЗаДело\" 😑😷", "callback": "af_curses_zadelo", "type": "article"}],
+            [{"text": "🤕️Головная боль🤕️", "callback": "af_curses_golovnaya", "type": "article"}],
+            [{"text": "Назад", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "closures": {
+        "message": "Крепко и надежно🤠️",
+        "buttons": [
+            [{"text": "Закрытие зеркальное \"Без Б\"", "callback": "af_closures_bezb", "type": "article"}],
+            [{"text": "100 лет морального одиночества", "callback": "af_closures_stolet", "type": "article"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "books": {
+        "message": "Знания - свет! ",
+        "buttons": [
+            [{"text": "Ссылка на литературу в ВК", "url": "https://vk.com/wall-151545228_95", "type": "link"}],
+            [{"text": "Как начать работу с бесами", "callback": "af_books_kaknachat", "type": "article"}],
+            [{"text": "Знакомство с кладбищем: как стать практиком?", "callback": "af_books_znakomstvo_s_kladbischem", "type": "article"}],
+            [{"text": "Про Род и Хранителя Рода", "callback": "af_books_prorod", "type": "article"}],
+            [{"text": "Рассорка: Как вызвать конфликт в отношениях", "callback": "af_books_kaknachatkonflikt", "type": "article"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "other": {
+        "message": "Ознакомьтесь!",
+        "buttons": [
+            [{"text": "🍀Привлечь удачу в любое дело🍀", "callback": "af_other_ydacha", "type": "article"}],
+            [{"text": "Открыть правду", "callback": "af_other_pravda", "type": "article"}, {"text": "Удержать сон 😯", "callback": "af_other_son", "type": "article"}],
+            [{"text": "Сдать удачно экзамен👨‍💻👩‍💻", "callback": "af_other_exam", "type": "article"}],
+            [{"text": "Подселить сущь в колоду", "callback": "af_other_susch", "type": "article"}],
+            [{"text": "\"Всем встать, хозяин дома идет\"", "callback": "af_other_hozain", "type": "article"}],
+            [{"text": "Открытие путей", "callback": "af_other_puti", "type": "article"}],
+            [{"text": "🐕🐾Найти потерянное животное", "callback": "af_other_zivotnoe", "type": "article"}],
+            [{"text": "Общий список работ Алисы Фроловой", "callback": "alice_menu", "type": "menu"}]
+        ]
+    },
+    "armant_menu": {
+        "message": "Добро пожаловать в меню Армант",
+        "buttons": [
+            [{"text": "☄️Набор энергии☄️", "callback": "armant_nabor_energii", "type": "menu"}],
+            [{"text": "💤️Теория💤️", "callback": "armant_teoriya", "type": "menu"}, {"text": "⚡️Практика⚡️", "callback": "armant_praktika", "type": "menu"}],
+            [{"text": "🧘️Медитации🧘️", "callback": "armant_meditacii", "type": "menu"}],
+            [{"text": "Назад", "callback": "section1", "type": "menu"}]
+        ]
+    },
+
+    "armant_nabor_energii": {
+        "message": "Выберите материал о наборе энергии",
+        "buttons": [
+            [{"text": "☄️О наборе энергии☄️", "callback": "armant_nabor_energii_o_nabore", "type": "article"}],
+            [{"text": "🌼️Набор энергии «Золотое озеро»🌼️", "callback": "armant_nabor_energii_zolotoe_ozero", "type": "article"}],
+            [{"text": "🧩️Каббалистический крест🧩️", "callback": "armant_nabor_energii_kabb_krest", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_menu", "type": "menu"}]
+        ]
+    },
+
+    "armant_teoriya": {
+        "message": "Выберите категорию теории",
+        "buttons": [
+            [{"text": "🕸️Общая🕸️", "callback": "armant_teoriya_obschaya", "type": "menu"}],
+            [{"text": "🔮️Таро🔮️", "callback": "armant_teoriya_taro", "type": "menu"}],
+            [{"text": "Назад", "callback": "armant_menu", "type": "menu"}]
+        ]
+    },
+
+    "armant_praktika": {
+        "message": "Выберите категорию практики",
+        "buttons": [
+            [{"text": "🧛🏻‍♀️️С сущностями🧚🏻‍♀️️", "callback": "armant_praktika_susch", "type": "menu"}],
+            [{"text": "✨️Энергетика✨️", "callback": "armant_praktika_energetika", "type": "menu"}],
+            [{"text": "Назад", "callback": "armant_menu", "type": "menu"}]
+        ]
+    },
+
+    "armant_meditacii": {
+        "message": "Выберите тип медитации",
+        "buttons": [
+            [{"text": "🔮️С арканами Таро🔮️", "callback": "armant_meditacii_taro", "type": "menu"}],
+            [{"text": "Медитация на стихию огня", "callback": "armant_meditacii_ogon", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_menu", "type": "menu"}]
+        ]
+    },
+
+    "armant_meditacii_taro": {
+        "message": "Выберите диапазон арканов",
+        "buttons": [
+            [{"text": "0-VIII", "callback": "armant_meditacii_taro_0_8", "type": "menu"}],
+            [{"text": "IX-XVII", "callback": "armant_meditacii_taro_9_17", "type": "menu"}],
+            [{"text": "XVIII-etc.", "callback": "armant_meditacii_taro_18_etc", "type": "menu"}],
+            [{"text": "Назад", "callback": "armant_meditacii", "type": "menu"}]
+        ]
+    },
+
+    "armant_meditacii_taro_0_8": {
+        "message": "Выберите аркан от 0 до VIII",
+        "buttons": [
+            [{"text": "Шут", "callback": "armant_med_taro_shut", "type": "article"}, {"text": "Маг", "callback": "armant_med_taro_mag", "type": "article"}, {"text": "Жрица", "callback": "armant_med_taro_jrica", "type": "article"}],
+            [{"text": "Императрица", "callback": "armant_med_taro_imperatr", "type": "article"}, {"text": "Император", "callback": "armant_med_taro_imperator", "type": "article"}, {"text": "Иерофант", "callback": "armant_med_taro_ierofant", "type": "article"}],
+            [{"text": "Влюбленные", "callback": "armant_med_taro_vlublennye", "type": "article"}, {"text": "Колесница", "callback": "armant_med_taro_kolesnica", "type": "article"}, {"text": "Сила", "callback": "armant_med_taro_sila", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_meditacii_taro", "type": "menu"}]
+        ]
+    },
+    "armant_meditacii_taro_9_17": {
+        "message": "Выберите аркан от IX до XVII",
+        "buttons": [
+            [{"text": "Отшельник", "callback": "armant_med_taro_otshelnik", "type": "article"}, {"text": "Колесо Фортуны", "callback": "armant_med_taro_koleso_fortuny", "type": "article"}, {"text": "Правосудие", "callback": "armant_med_taro_pravosudie", "type": "article"}],
+            [{"text": "Повешенный", "callback": "armant_med_taro_poveshennyi", "type": "article"}, {"text": "Смерть", "callback": "armant_med_taro_smert", "type": "article"}, {"text": "Искусство", "callback": "armant_med_taro_iskusstvo", "type": "article"}],
+            [{"text": "Дьявол", "callback": "armant_med_taro_diavol", "type": "article"}, {"text": "Башня", "callback": "armant_med_taro_bashnya", "type": "article"}, {"text": "Звезда", "callback": "armant_med_taro_zvezda", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_meditacii_taro", "type": "menu"}]
+        ]
+    },
+
+    "armant_meditacii_taro_18_etc": {
+        "message": "Выберите аркан от XVIII и далее",
+        "buttons": [
+            [{"text": "Луна", "callback": "armant_med_taro_luna", "type": "article"}, {"text": "Солнце", "callback": "armant_med_taro_solnce", "type": "article"}, {"text": "Суд", "callback": "armant_med_taro_sud", "type": "article"}],
+            [{"text": "Мир", "callback": "armant_med_taro_mir", "type": "article"}, {"text": "Тузы", "callback": "armant_med_taro_tuzy", "type": "article"}, {"text": "Двойки", "callback": "armant_med_taro_dvoiki", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_meditacii_taro", "type": "menu"}]
+        ]
+    },
+    "armant_teoriya_obschaya": {
+        "message": "Выберите статью из общей теории",
+        "buttons": [
+            [{"text": "О терминологии", "callback": "armant_teor_obsch_term", "type": "article"}, {"text": "О самодисциплине", "callback": "armant_teor_obsch_samodisc", "type": "article"}],
+            [{"text": "О принципах церемониальной магии", "callback": "armant_teor_obsch_princ_magii", "type": "article"}],
+            [{"text": "Об эмоциях", "callback": "armant_teor_obsch_emocii", "type": "article"}, {"text": "О базовых навыках", "callback": "armant_teor_obsch_baz_navyki", "type": "article"}],
+            [{"text": "Об осознанных сновидениях", "callback": "armant_teor_obsch_osozn_snovid", "type": "article"}],
+            [{"text": "О кастах и перерождениях", "callback": "armant_teor_obsch_kasty", "type": "article"}],
+            [{"text": "О подселении и одержимости", "callback": "armant_teor_obsch_podsel", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_teoriya", "type": "menu"}]
+        ]
+    },
+    "armant_teoriya_taro": {
+        "message": "Выберите статью из теории Таро",
+        "buttons": [
+            [{"text": "Как задавать вопросы картам Таро", "callback": "armant_teor_taro_voprosy", "type": "article"}],
+            [{"text": "О триплетах", "callback": "armant_teor_taro_triplet", "type": "article"}, {"text": "О диагностике чакр", "callback": "armant_teor_taro_diag_chakr", "type": "article"}],
+            [{"text": "Об оттачивании навыка задавания вопросов картам Таро", "callback": "armant_teor_taro_ottach_vopros", "type": "article"}],
+            [{"text": "Зачем смотреть энергетическое состояние на Таро", "callback": "armant_teor_taro_zachem_energ", "type": "article"}],
+            [{"text": "Техника просмотра", "callback": "armant_teor_taro_tehnik_prosm", "type": "article"}, {"text": "Принципы работы", "callback": "armant_teor_taro_princ_raboty", "type": "article"}],
+            [{"text": "Просмотр энергетики бытовых ситуаций на Таро", "callback": "armant_teor_taro_byt_sit", "type": "article"}],
+            [{"text": "Почему мы вытаскиваем свои мысли и желания в раскладе на Таро", "callback": "armant_teor_taro_mysli", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_teoriya", "type": "menu"}]
+        ]
+    },
+    "armant_praktika_susch": {
+        "message": "Выберите статью о практике с сущностями",
+        "buttons": [
+            [{"text": "🧚🏻‍♀️С саламандрами🧚🏻‍♀️", "callback": "armant_prakt_susch_salamandry", "type": "article"}, {"text": "🧚🏻‍♀️С сильфами🧚🏻‍♀️", "callback": "armant_prakt_susch_silfy", "type": "article"}],
+            [{"text": "🧚🏻‍♀️О призыве саламандры🧚🏻‍♀️", "callback": "armant_prakt_susch_prizyv_salam", "type": "article"}],
+            [{"text": "🧚🏻‍♀️С ундинами🧚🏻‍♀️", "callback": "armant_prakt_susch_undiny", "type": "article"}, {"text": "🧚🏻‍♀️С гномами🧚🏻‍♀️", "callback": "armant_prakt_susch_gnomy", "type": "article"}],
+            [{"text": "🧛🏻‍♀️О бесах и стихийных духах🧛🏻‍♀️", "callback": "armant_prakt_susch_besy_duhi", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_praktika", "type": "menu"}]
+        ]
+    },
+    "armant_praktika_energetika": {
+        "message": "Выберите статью о практике с энергетикой",
+        "buttons": [
+            [{"text": "Зарядка карт", "callback": "armant_prakt_energ_zaryadka_kart", "type": "article"}],
+            [{"text": "Об иглах", "callback": "armant_prakt_energ_igly", "type": "article"}, {"text": "Монета удачи", "callback": "armant_prakt_energ_moneta", "type": "article"}],
+            [{"text": "Магический круг", "callback": "armant_prakt_energ_mag_kryg", "type": "article"}, {"text": "Восковые шарики", "callback": "armant_prakt_energ_vosk_shariki", "type": "article"}],
+            [{"text": "Исполнение любовного желания", "callback": "armant_prakt_energ_lubovnoe_zhel", "type": "article"}],
+            [{"text": "Артефакторика для самых маленьких", "callback": "armant_prakt_energ_artefaktorika", "type": "article"}],
+            [{"text": "Чистки", "callback": "armant_prakt_energ_chistki", "type": "menu"}],
+            [{"text": "Назад", "callback": "armant_praktika", "type": "menu"}]
+        ]
+    },
+    "armant_prakt_energ_chistki": {
+        "message": "Выберите метод чистки",
+        "buttons": [
+            [{"text": "Чистка помещения с помощью стихии огня", "callback": "armant_prakt_chistki_pomesh_ogon", "type": "article"}],
+            [{"text": "Энергетическая чистка «Четыре шага»", "callback": "armant_prakt_chistki_4_shaga", "type": "article"}],
+            [{"text": "Генеральная бесовская уборка", "callback": "armant_prakt_chistki_besovskaya", "type": "article"}],
+            [{"text": "Назад", "callback": "armant_praktika_energetika", "type": "menu"}]
+        ]
+    }
+}
