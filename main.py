@@ -8,7 +8,7 @@ from bot.handlers import register_handlers
 
 WEBHOOK_PATH = "/"  # Telegram будет отправлять POST сюда
 WEBAPP_HOST = "0.0.0.0"
-WEBAPP_PORT = 10000
+WEBAPP_PORT = int(os.environ.get("PORT", 5000))
 WEBHOOK_URL = "https://telegram-bot-z4g4.onrender.com"  # <-- Твой адрес
 
 async def on_startup(app: web.Application):
