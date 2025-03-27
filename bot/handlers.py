@@ -235,3 +235,9 @@ def register_handlers(dp: Dispatcher):
     dp.message.register(armant_menu_command, Command("aa1"))
     dp.message.register(alice_menu_command, Command("frolova"))
     dp.message.register(clear_user_messages, Command("шалость_удалась"))
+
+from aiogram import types
+
+@dp.update()
+async def log_everything(update: types.Update):
+    logger.info(f"🔍 НЕОБРАБОТАННОЕ ОБНОВЛЕНИЕ:\n{update.model_dump_json(indent=2)}")
